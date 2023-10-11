@@ -12,6 +12,12 @@ img {
     max-width: 100%;
 }
 
+/* COMMON */
+header button, .ms_sidebar button {
+    border: 0;
+    background-color: transparent;
+}
+
 /* Web APP */
 .app {
     width: 100%;
@@ -37,12 +43,6 @@ header .container-fluid .row {
 
 header .row .col:first-child, header .row .col:last-child {
     width: fit-content;
-}
-
-header button {
-    border: 0;
-    background-color: transparent;
-
 }
 
 /* Searchbar */
@@ -76,6 +76,18 @@ main {
     width: var(--ms_sidebar-width-mobile);
     height: 100%;
     background-color: var(--ms_bg-sidebar);
+}
+
+.ms_sidebar ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.ms_sidebar ul button {
+    color: white;
+    font-size: 1.5rem;
+    
 }
 
 /* Main-Content */
