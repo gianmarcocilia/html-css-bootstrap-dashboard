@@ -1,0 +1,52 @@
+/* CUSTOM PROPERTIES */
+:root {
+    --ms_header-height: 80px;
+    --ms_bg-primary-color: rgb(248 249 250);
+    --ms_sidebar-width-mobile: 60px;
+    --ms_sidebar-width-desktop: 120px;
+    --ms_bg-sidebar:rgb(5 30 52);
+}
+
+/* Web APP */
+.app {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER */
+header {
+    height: var(--ms_header-height);
+    width: 100%;
+    background-color: var(--ms_bg-primary-color);
+}
+
+/* MAIN */
+main {
+    height: calc(100% - var(--ms_header-height));
+    width: 100%;
+    display: flex;
+}
+
+/* Sidebar */
+.ms_sidebar {
+    width: var(--ms_sidebar-width-mobile);
+    height: 100%;
+    background-color: var(--ms_bg-sidebar);
+}
+
+/* Main-Content */
+.ms_main-content {
+    width: calc(100% - var(--ms_sidebar-width-mobile));
+    height: 100%;
+    background-color: var(--ms_bg-primary-color);
+}
+
+@media screen and (min-width: 992px) {
+    .ms_sidebar {
+        width: var(--ms_sidebar-width-desktop);
+    }
+
+    .ms_main-content {
+        width: calc(100% - var(--ms_sidebar-width-desktop));
+    }
+}
