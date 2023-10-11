@@ -20,8 +20,31 @@
 <body>
     <div class="app">
         <!-- Header -->
-        <header>
-
+        <header class="d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row row-cols-3 bg-white align-items-center">
+                    <!-- Logos -->
+                    <div class="col">
+                        <img class="ms_header-logos d-lg-none" src="img/mobile-logo.png" alt="Logo for mobile">
+                        <img class="ms_header-logos d-none d-lg-block" src="img/logo.svg" alt="Logo for desktop">
+                    </div>
+                    <!-- /Logos -->
+                    <div class="col flex-grow-1">
+                        <div class="ms_search-bar">
+                            <button type="submit" class="ms_search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">                 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled d-flex m-0">
+                            <li><button><i class="fa-solid fa-bell"></i></button></li>
+                            <li class="d-none d-lg-block"><button><i class="fa-solid fa-ellipsis-vertical"></i></button></li>
+                            <li class="d-none d-lg-block"><button><i class="fa-solid fa-circle-question"></i></button></li>
+                            <li class="d-none d-lg-block"><button><i class="fa-solid fa-bars"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- /Header -->
 

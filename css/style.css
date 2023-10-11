@@ -2,9 +2,14 @@
 :root {
     --ms_header-height: 80px;
     --ms_bg-primary-color: rgb(248 249 250);
-    --ms_sidebar-width-mobile: 60px;
-    --ms_sidebar-width-desktop: 120px;
+    --ms_sidebar-width-mobile: 80px;
+    --ms_sidebar-width-desktop: 180px;
     --ms_bg-sidebar:rgb(5 30 52);
+}
+
+/* RESET */
+img {
+    max-width: 100%;
 }
 
 /* Web APP */
@@ -18,6 +23,45 @@ header {
     height: var(--ms_header-height);
     width: 100%;
     background-color: var(--ms_bg-primary-color);
+}
+
+header .container-fluid .row {
+    height: calc(var(--ms_header-height) - 20px);
+}
+
+/* Logos */
+.ms_header-logos {
+    min-width: max-content;
+    height: calc(var(--ms_header-height) - 20px);
+}
+
+header .row .col:first-child, header .row .col:last-child {
+    width: fit-content;
+}
+
+header button {
+    border: 0;
+    background-color: transparent;
+
+}
+
+/* Searchbar */
+.ms_search-bar {
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    padding: 10px 5px;
+    display: flex;
+    width: 100%;
+}
+
+.ms_search-bar input {
+    outline: 0;
+    width: 100%;
+}
+
+.ms_search-bar input {
+    border: 0;
+    background-color: transparent;
 }
 
 /* MAIN */
@@ -48,5 +92,9 @@ main {
 
     .ms_main-content {
         width: calc(100% - var(--ms_sidebar-width-desktop));
+    }
+
+    .ms_header-logos {
+        height: calc(var(--ms_header-height) - 40px);
     }
 }
