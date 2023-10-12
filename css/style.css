@@ -41,9 +41,9 @@ header .container-fluid .row {
     height: calc(var(--ms_header-height) - 20px);
 }
 
-header .row .col:first-child, header .row .col:last-child {
+/* header .row .col:first-child, header .row .col:last-child {
     width: fit-content;
-}
+} */
 
 /* Searchbar */
 .ms_search-bar {
@@ -82,6 +82,7 @@ main {
     list-style: none;
     padding: 0;
     color: white;
+    margin-bottom: 5px;
 }
 
 .ms_sidebar ul button {
