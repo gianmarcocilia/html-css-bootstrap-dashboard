@@ -2,9 +2,14 @@
 :root {
     --ms_header-height: 80px;
     --ms_bg-primary-color: rgb(248 249 250);
-    --ms_sidebar-width-mobile: 80px;
-    --ms_sidebar-width-desktop: 180px;
+    --ms_sidebar-width: 80px;
     --ms_bg-sidebar:rgb(5 30 52);
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --ms_sidebar-width: 180px;
+    }  
 }
 
 /* RESET */
@@ -31,19 +36,17 @@ header {
     background-color: var(--ms_bg-primary-color);
 }
 
-header .container-fluid .row {
-    height: calc(var(--ms_header-height) - 20px);
-}
-
 /* Logos */
 .ms_header-logos {
     min-width: max-content;
     height: calc(var(--ms_header-height) - 20px);
 }
 
-/* header .row .col:first-child, header .row .col:last-child {
-    width: fit-content;
-} */
+@media screen and (min-width: 992px) {
+    .ms_header-logos {
+        height: calc(var(--ms_header-height) - 40px);
+    }
+}
 
 /* Searchbar */
 .ms_search-bar {
@@ -73,7 +76,7 @@ main {
 
 /* Sidebar */
 .ms_sidebar {
-    width: var(--ms_sidebar-width-mobile);
+    width: var(--ms_sidebar-width);
     height: 100%;
     background-color: var(--ms_bg-sidebar);
 }
@@ -87,27 +90,13 @@ main {
 
 .ms_sidebar ul button {
     color: white;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 
 /* Main-Content */
 .ms_main-content {
-    width: calc(100% - var(--ms_sidebar-width-mobile));
+    width: calc(100% - var(--ms_sidebar-width));
     height: 100%;
     background-color: var(--ms_bg-primary-color);
 }
 
-@media screen and (min-width: 992px) {
-    .ms_sidebar {
-        width: var(--ms_sidebar-width-desktop);
-    }
-
-    .ms_main-content {
-        width: calc(100% - var(--ms_sidebar-width-desktop));
-    }
-
-    .ms_header-logos {
-        height: calc(var(--ms_header-height) - 40px);
-    }
-}
