@@ -99,6 +99,7 @@ main {
     width: calc(100% - var(--ms_sidebar-width));
     height: 100%;
     background-color: var(--ms_bg-primary-color);
+    overflow-y: auto;
 }
 
 /* Dashboard */
@@ -118,4 +119,30 @@ main {
 
 .ms_3-app ul {
     gap: 5px;
+}
+
+/* Content */
+.card .table img {
+    width: 35px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.ms_done, .ms_process, .ms_failed {
+    display: inline-block;
+    color: white;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.ms_done {
+    background-color: green;
+}
+
+.ms_process {
+    background-color: orange;
+}
+
+.ms_failed {
+    background-color: red;
 }
