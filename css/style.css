@@ -51,18 +51,11 @@ header {
 /* Searchbar */
 .ms_search-bar {
     background-color: rgb(224, 224, 224);
-    border-radius: 5px;
-    padding: 10px 5px;
-    display: flex;
-    width: 100%;
 }
 
 .ms_search-bar input {
     outline: 0;
     width: 100%;
-}
-
-.ms_search-bar input {
     border: 0;
     background-color: transparent;
 }
