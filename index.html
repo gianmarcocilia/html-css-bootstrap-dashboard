@@ -40,16 +40,16 @@
                     <div class="col-auto">
                         <ul class="list-unstyled d-flex m-0">
                             <li class="d-none d-lg-block">
-                                <button><i class="fa-solid fa-bars"></i></button>
+                                <button class="text-secondary"><i class="fa-solid fa-bars"></i></button>
                             </li>
                             <li class="d-none d-lg-block">
-                                <button><i class="fa-solid fa-circle-question"></i></button>
+                                <button class="text-secondary"><i class="fa-solid fa-circle-question"></i></button>
                             </li>
                             <li class="d-none d-lg-block">
-                                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                <button class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                             </li>
                             <li>
-                                <button><i class="fa-solid fa-bell"></i></button>
+                                <button class="text-warning"><i class="fa-solid fa-bell"></i></button>
                             </li>
                         </ul>
                     </div>
@@ -62,36 +62,17 @@
         <main>
             <!-- SideBar -->
             <section class="ms_sidebar py-3">
-                <div class="d-flex flex-column justify-content-between h-100">
-                    <ul>
+                <div class="container h-100">
+                    <ul class="d-flex flex-column align-items-center justify-content-between h-100 m-0 p-0">
                         <li>
-                            <ul class="d-flex align-items-center justify-content-center">
-                                <li><button><i class="fa-solid fa-house"></i></button></li>
-                                <li class="d-none d-lg-block">Home</li>
+                            <ul class="d-flex flex-column align-items-center m-0 p-0">
+                                <li><button type="button" class="btn btn-outline-light fs-4"><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline-block ms-2">Home</span></button></li>
+                                <li><button type="button" class="btn btn-outline-light fs-4"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline-block ms-2">Stats</span></button></li>
+                                <li><button type="button" class="btn btn-outline-light fs-4"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline-block ms-2">Signals</span></button></li>
                             </ul>
                         </li>
-                        <li>
-                            <ul class="d-flex align-items-center justify-content-center">
-                                <li><button><i class="fa-solid fa-chart-simple"></i></button></li>
-                                <li class="d-none d-lg-block">Stats</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="d-flex align-items-center justify-content-center">
-                                <li><button><i class="fa-solid fa-signal"></i></button></li>
-                                <li class="d-none d-lg-block">Signals</li>
-                            </ul>
-                        </li>
+                        <li><button type="button" class="btn btn-outline-light fs-4"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline-block ms-2">Admin</span></button></li>
                     </ul>
-                    <ul>
-                        <li>
-                            <ul class="d-flex align-items-center justify-content-center">
-                                <li><button><i class="fa-solid fa-gear"></i></button></li>
-                                <li class="d-none d-lg-block">Admin</li>
-                            </ul>
-                        </li>
-                    </ul>
-
                 </div>
             </section>
             <!-- /SideBar -->
@@ -100,7 +81,7 @@
             <section class="ms_main-content">
                 <div class="ms_dashboard">
                     <div class="container-fluid">
-                        <div class="row row-cols-1 row-cols-md-3 py-3">
+                        <div class="row row-cols-1 row-cols-md-3 py-3 g-2">
                             <div class="col-auto order-md-last">
                                 <p class="d-inline-block me-3">Nuovo Studente</p>
                                 <button type="button" class="btn btn-outline-light"><i
@@ -136,7 +117,7 @@
                             </div>
                             <!-- /Section with link button -->
                             <div class="col">
-                                <p>Studenti negli ultimi 30 minuti</p>
+                                <p class="m-0">Studenti negli ultimi 30 minuti</p>
                                 <p clasS="fs-3">125</p>
                             </div>
                         </div>
@@ -366,7 +347,8 @@
                                         <img src="img/stats.jpeg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             <h5 class="card-title">Utenti attivi</h5>
-                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo
+                                                mese</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">Gennaio: 1200</li>
@@ -375,7 +357,7 @@
                                         </ul>
                                         <div class="card-body">
                                             <a href="#" class="card-link">Visualizza report approfondito</a>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
