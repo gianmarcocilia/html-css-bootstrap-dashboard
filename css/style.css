@@ -3,7 +3,10 @@
     --ms_header-height: 80px;
     --ms_bg-primary-color: rgb(248 249 250);
     --ms_sidebar-width: 80px;
-    --ms_bg-sidebar:rgb(5 30 52);
+    --ms_bg-sidebar: rgb(5 30 52);
+    --ms_bg-dashboard: rgb(27 114 232);
+    --ms_white-color: white;
+    --ms_btn-color: rgb(22 91 187);
 }
 
 @media screen and (min-width: 992px) {
@@ -36,6 +39,10 @@ header {
     background-color: var(--ms_bg-primary-color);
 }
 
+header .container-fluid .row {
+    height: calc(var(--ms_header-height) - 20px);
+}
+
 /* Logos */
 .ms_header-logos {
     min-width: max-content;
@@ -54,6 +61,7 @@ header {
 }
 
 .ms_search-bar input {
+    padding: 5px 0;
     outline: 0;
     width: 100%;
     border: 0;
@@ -77,12 +85,12 @@ main {
 .ms_sidebar ul {
     list-style: none;
     padding: 0;
-    color: white;
+    color: var(--ms_white-color);
     margin-bottom: 5px;
 }
 
 .ms_sidebar ul button {
-    color: white;
+    color: var(--ms_white-color);
     font-size: 1.5rem;   
 }
 
@@ -93,3 +101,21 @@ main {
     background-color: var(--ms_bg-primary-color);
 }
 
+/* Dashboard */
+.ms_dashboard {
+    background-color: var(--ms_bg-dashboard);
+    color: var(--ms_white-color);
+}
+
+.ms_btn-primary {
+    background-color: var(--ms_btn-color);
+    color: var(--ms_white-color);
+}
+
+.ms_3-app {
+    gap: 5px;
+}
+
+.ms_3-app ul {
+    gap: 5px;
+}
